@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/Illidan0219/ahooks.git",
   "author": "Illidan0219",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.89.0"
+  }
 }
