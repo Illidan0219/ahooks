@@ -1,11 +1,21 @@
 {
   "name": "ah0oks",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": "true",
   "repository": "https://github.com/Illidan0219/ahooks.git",
   "author": "Illidan0219",
   "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
   "dependencies": {
+    "lodash": "^4.17.21",
     "webpack": "^5.89.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack-cli": "^5.1.4"
   }
 }
