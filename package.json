@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -15,7 +16,10 @@
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
-    "webpack-cli": "^5.1.4"
+    "webpack-bundle-analyzer": "^4.9.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
