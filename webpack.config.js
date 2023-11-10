@@ -12,7 +12,7 @@ module.exports = {
         static: './dist',
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
@@ -20,7 +20,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: "Development"
         }),
-        new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin()
     ],
     module: {
         rules: [
@@ -39,4 +39,16 @@ module.exports = {
     //         chunks: 'all',
     //     },
     // },
+    optimization: {
+        runtimeChunk: 'single',
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all',
+                },
+            },
+        },
+    },
 };

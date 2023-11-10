@@ -1,1 +1,5 @@
-console.info(process)
+(function () {
+    console.info('222')
+})();
+const test = 'test'
+export default test
